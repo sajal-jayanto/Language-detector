@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+
+<div class="text-br">
+
+    <form action="/" method="post">
+        <textarea name="text" required>{{language.txt}}</textarea>
+        <button type="submit" class="btn btn-primary btn-lg btn-block button-some">Detector language</button>
+    </form>
+</div>
+
+
+{{#if language}}
+    <div class="text-br">
+        <div class="card">
+            <h6 class=" text-center mt-2"> Language :  {{language.name}} </h6>
+        </div>
+    </div>
+{{/if}}
+
+
