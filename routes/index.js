@@ -21,6 +21,7 @@ router.get('/', (req, res, next) =>{
     can = !can;
     if(can) {
         language = null;
+        can = !can;
         return res.render('index');
     }
     return res.render('index' , {
